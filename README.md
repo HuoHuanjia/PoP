@@ -2,6 +2,16 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.15.
 
+Run th APIPASS with python 3.9
+
+Run the APISC:
+1. npm i
+2. node index.js
+
+Run the creatorUGC
+1. npm i
+2. npm start
+
 ## Development server
 
 To start a local development server, run:
