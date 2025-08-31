@@ -1,0 +1,27 @@
+<body>
+    <div class="container">
+        <h1 class="title">Recompensas de Campañas</h1>
+
+        <div class="swap-box">            
+            <label><strong>Campaña: </strong>Recompensas de la Campaña RocketBull 🚀</label>
+            <div class="input-row">
+                <span><strong>Monto: 1200 USDT</strong></span>
+                <button (click)="withdraw(1200)" class="token-btn pink">Obtener reward</button>
+            </div>
+            <button (click)="connectWallet()" class="start-btn">{{connect}}</button>
+        </div>
+
+        <div class="swap-box">            
+            <label><strong>Campaña: </strong>QUEEN, empoderando mujeres cripto 👑</label>
+            <div class="input-row">
+                <span><strong>Monto: 800 USDT</strong></span>
+                <button (click)="withdraw(800)" class="token-btn pink">Obtener reward</button>
+            </div>
+            <button (click)="connectWallet()" class="start-btn">{{connect}}</button>
+        </div>
+
+        <p class="footer-text">
+            Gracias por aportar con tus creaciones.
+        </p>
+    </div>  
+</body>

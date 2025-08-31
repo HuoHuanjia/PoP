@@ -1,0 +1,26 @@
+<body>
+  <div class="modal">
+    <div class="modal-header">
+      <h2>Buscar Talento</h2>
+      <button (click)="goToStart()" class="close">✕</button>
+    </div>
+    <form class="modal-body">
+      <label for="titulo">Título de proyecto *</label>
+      <input type="text" id="titulo" placeholder="">
+
+      <label for="objetivos">Objetivos *</label>
+      <textarea id="objetivos"></textarea>
+
+      <label for="actividades">Actividades (que debe hacer el creador) *</label>
+      <textarea id="actividades"></textarea>
+
+      <label for="remuneracion">Remuneración *</label>
+      <input type="text" id="remuneracion" placeholder="Ej: $500 USD">
+
+      <div class="modal-footer">
+        <button type="button" class="btn-cancel">Cancelar</button>
+        <button (click)="submitForm()" type="submit" class="btn-submit">Publicar Proyecto</button>
+      </div>
+    </form>
+  </div>
+</body>

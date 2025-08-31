@@ -1,0 +1,42 @@
+<body>
+    <div class="overlay"></div>
+
+  <!-- Modal -->
+  <div class="modal">
+    <div class="modal-header">
+      <h2>Proyectos Disponibles</h2>
+      <button (click)="goToStart()" class="close-btn">✕</button>
+    </div>
+
+    <div class="modal-body">
+      <!-- Tarjeta de Proyecto -->
+      <div *ngFor="let camp of campana; i as index" class="card">
+        <h2 class="card-title">
+          <span>{{camp.titulo}}</span>
+        </h2>
+
+        <div class="section">
+          <h3>OBJETIVOS</h3>
+          <p>
+            {{camp.objetivo}}
+          </p>
+        </div>
+
+        <div class="section">
+          <h3>ACTIVIDADES</h3>
+          <p>
+            {{camp.actividades}}
+          </p>
+        </div>
+
+        <div class="section">
+          <h3>REMUNERACIÓN</h3>
+          <div class="salary-apply">
+            <span class="salary">$ {{camp.remuneracion}} USD</span>
+            <button (click)="setApply(i)" class="apply-btn">Aplicar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="profile-header">
+        <div class="profile-pic">
+            <img src="logo_creator.png" alt="Profile Picture">
+        </div>
+        <div class="profile-info">
+            <h1>UGC_Creators Perú</h1>
+            <p>Empowering Creators, Amplifying Brands</p>
+        </div>
+    </div>
+    <div class="card-container">
+        <div *ngFor="let camp of campana; index as i"   >
+            <div class="card" (click)="showContent(i)">
+                <span><strong>{{camp.titulo}}</strong></span>
+            </div>
+            
+            <div class="card-content" [class]="{ 'hidden': !details.get(i)}">                
+                <h3>Objetivo:</h3>
+                <p>{{camp.objetivo}}</p>
+                <h3>Actividades:</h3>
+                <p>{{camp.actividades}}</p>
+                <h3>Recompensas:</h3>
+                <p>{{camp.remuneracion}}</p>
+                <button class="btnApply" (click)="showApply(i)">SUBMIT</button>
+            </div>
+            <div class="dataApply" [class]="{ 'hidden': !apply.get(i)}">
+                <form class="form">
+                    <label for="video">Video creado <span>*</span></label>
+                    <input type="text" id="video" name="video" required>
+                </form>
+
+                <button class="btnApply">ENVIAR</button>
+
+            </div>         
+
+        </div>
+        <div>
+
+        </div>
+               
+    </div>
+</div>
+
