@@ -2,6 +2,11 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.15.
 
+Deploy the smartcontracts:
+-stabletesnet.sol
+-adminData.sol
+-contractPay.sol
+
 Run th APIPASS with python 3.9
 
 Run the APISC:
