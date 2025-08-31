@@ -3,15 +3,16 @@
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.15.
 
 Deploy the smartcontracts:
--stabletesnet.sol
--adminData.sol
--contractPay.sol
+1. stabletesnet.sol
+2. adminData.sol
+3. contractPay.sol
 
 Run th APIPASS with python 3.9
 
 Run the APISC:
-1. npm i
-2. node index.js
+1. set your contractPay contract address and owner wallet in .env
+2. npm i
+3. node index.js
 
 Run the creatorUGC
 1. npm i
